@@ -1,0 +1,31 @@
+{
+  "name": "meli-filtro-politicas",
+  "version": "1.0.0",
+  "description": "Filtro de políticas de Mercado Libre para mensajería postventa (Node.js + TypeScript + MariaDB)",
+  "main": "dist/servidor.js",
+  "scripts": {
+    "dev": "tsx watch src/servidor.ts",
+    "build": "tsc",
+    "start": "node dist/servidor.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "author": "Matias",
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/static": "^10.1.12",
+    "fastify": "^5.12.8",
+    "mariadb": "^3.5.5",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
